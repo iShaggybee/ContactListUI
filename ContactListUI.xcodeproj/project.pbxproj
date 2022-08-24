@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6369BBBE28B6656600F5D30D /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369BBBD28B6656600F5D30D /* ContactView.swift */; };
+		6369BBC028B68B4000F5D30D /* ContactField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6369BBBF28B68B4000F5D30D /* ContactField.swift */; };
 		63AA096928B529C000EF34CF /* ContactListUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA096828B529C000EF34CF /* ContactListUIApp.swift */; };
 		63AA096B28B529C000EF34CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA096A28B529C000EF34CF /* ContentView.swift */; };
 		63AA096D28B529C200EF34CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AA096C28B529C200EF34CF /* Assets.xcassets */; };
 		63AA097028B529C200EF34CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AA096F28B529C200EF34CF /* Preview Assets.xcassets */; };
+		63AA097B28B52C5F00EF34CF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA097A28B52C5F00EF34CF /* Person.swift */; };
+		63AA097D28B52C7F00EF34CF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA097C28B52C7F00EF34CF /* DataManager.swift */; };
+		63AA097F28B52DE100EF34CF /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA097E28B52DE100EF34CF /* ContactList.swift */; };
+		63AA098128B52E1300EF34CF /* ContactListExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA098028B52E1300EF34CF /* ContactListExtended.swift */; };
+		63AA098328B61E0600EF34CF /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA098228B61E0600EF34CF /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6369BBBD28B6656600F5D30D /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		6369BBBF28B68B4000F5D30D /* ContactField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactField.swift; sourceTree = "<group>"; };
 		63AA096528B529C000EF34CF /* ContactListUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AA096828B529C000EF34CF /* ContactListUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListUIApp.swift; sourceTree = "<group>"; };
 		63AA096A28B529C000EF34CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63AA096C28B529C200EF34CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AA096F28B529C200EF34CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63AA097A28B52C5F00EF34CF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		63AA097C28B52C7F00EF34CF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		63AA097E28B52DE100EF34CF /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		63AA098028B52E1300EF34CF /* ContactListExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListExtended.swift; sourceTree = "<group>"; };
+		63AA098228B61E0600EF34CF /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6369BBC128B6B76500F5D30D /* ContactListViews */ = {
+			isa = PBXGroup;
+			children = (
+				63AA097E28B52DE100EF34CF /* ContactList.swift */,
+				63AA098028B52E1300EF34CF /* ContactListExtended.swift */,
+				63AA098228B61E0600EF34CF /* ContactCell.swift */,
+				6369BBBD28B6656600F5D30D /* ContactView.swift */,
+				6369BBBF28B68B4000F5D30D /* ContactField.swift */,
+			);
+			path = ContactListViews;
+			sourceTree = "<group>";
+		};
+		6369BBC228B6B7A100F5D30D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63AA097A28B52C5F00EF34CF /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6369BBC328B6B7AE00F5D30D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63AA097C28B52C7F00EF34CF /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		63AA095C28B529C000EF34CF = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +93,9 @@
 		63AA096728B529C000EF34CF /* ContactListUI */ = {
 			isa = PBXGroup;
 			children = (
+				6369BBC328B6B7AE00F5D30D /* Services */,
+				6369BBC228B6B7A100F5D30D /* Models */,
+				6369BBC128B6B76500F5D30D /* ContactListViews */,
 				63AA096828B529C000EF34CF /* ContactListUIApp.swift */,
 				63AA096A28B529C000EF34CF /* ContentView.swift */,
 				63AA096C28B529C200EF34CF /* Assets.xcassets */,
@@ -138,7 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63AA096B28B529C000EF34CF /* ContentView.swift in Sources */,
+				63AA098128B52E1300EF34CF /* ContactListExtended.swift in Sources */,
+				63AA097D28B52C7F00EF34CF /* DataManager.swift in Sources */,
+				6369BBBE28B6656600F5D30D /* ContactView.swift in Sources */,
+				63AA097B28B52C5F00EF34CF /* Person.swift in Sources */,
+				6369BBC028B68B4000F5D30D /* ContactField.swift in Sources */,
 				63AA096928B529C000EF34CF /* ContactListUIApp.swift in Sources */,
+				63AA098328B61E0600EF34CF /* ContactCell.swift in Sources */,
+				63AA097F28B52DE100EF34CF /* ContactList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContactListUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContactListUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
